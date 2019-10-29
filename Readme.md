@@ -8,7 +8,7 @@ npm start <br>
 npm run build <br>
 npm run serve build <br>
 
-###Issues: 
+### Issues: 
 In case use tag Table after edit cell react will rerender full table<br>
 ```javascript
 export const DataTable = props => {
