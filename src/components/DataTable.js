@@ -79,7 +79,7 @@ export const DataTable = props => {
                         <tr key={rowIndex}>
                             {row.map((cell, cellIndex) => {
                                 return (
-                                    <td key={cell} data-row={rowIndex}>
+                                    <td key={cellIndex} data-row={rowIndex}>
                                         {_edit &&
                                         _edit.row === rowIndex &&
                                         _edit.cell === cellIndex ? (
