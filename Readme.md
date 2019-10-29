@@ -10,7 +10,7 @@ npm run serve build <br>
 
 ###Issues: 
 In case use tag Table after edit cell react will rerender full table<br>
-````
+```javascript
 export const DataTable = props => {
     ...
     const Table = () => {
@@ -23,10 +23,10 @@ export const DataTable = props => {
         </div>
     );
 };
-````
+```
 
 In case as function call will rerender only edited cell
-````
+```javascript
 export const DataTable = props => {
     ...
     const Table = () => {
@@ -39,4 +39,4 @@ export const DataTable = props => {
         </div>
     );
 };
-````
+```
