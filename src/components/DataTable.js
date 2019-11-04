@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react';
+import React, { useState } from 'react';
 import * as PropTypes from 'prop-types';
 import * as R from 'ramda';
 import { UpArrow, DownArrow, NoArrow } from './Arrows';
