@@ -1,8 +1,11 @@
+@import "~/reset.scss";
 @import "~bootstrap";
 @import "~font-awesome";
+@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
 
 body {
     margin: 1rem;
     color: aliceblue;
     background-color: #333;
+    font-family: 'Inconsolata', monospace;
 }

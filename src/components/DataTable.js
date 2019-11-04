@@ -9,7 +9,8 @@ export const DataTable = props => {
         sortBy: null,
         desc: false,
     });
-    const [_edit, setEdit] = useState(null);
+
+    const [_edit, setEdit] = useState({ row: null, cell: null });
 
     const handleSort = event => {
         const index = event.target.cellIndex;
@@ -46,7 +47,7 @@ export const DataTable = props => {
         const dataCopy = [..._data];
         dataCopy[row][cell] = value;
         setData(dataCopy);
-        setEdit(null);
+        setEdit({ row: null, cell: null });
     };
 
     const { headers } = props;
@@ -79,9 +80,11 @@ export const DataTable = props => {
                         <tr key={rowIndex}>
                             {row.map((cell, cellIndex) => {
                                 return (
-                                    <td key={cellIndex} data-row={rowIndex}>
-                                        {_edit &&
-                                        _edit.row === rowIndex &&
+                                    <td
+                                        key={cellIndex}
+                                        data-row={rowIndex}
+                                    >
+                                        {_edit.row === rowIndex &&
                                         _edit.cell === cellIndex ? (
                                             <Editor
                                                 cell={cell}
@@ -102,7 +105,7 @@ export const DataTable = props => {
 
     return (
         <div>
-            {/*<Table />*/}
+            {/* <Table /> */}
             {Table()}
         </div>
     );

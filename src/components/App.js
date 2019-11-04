@@ -43,7 +43,13 @@ const data = [
         '1754–1791',
         '100 million',
     ],
-    ['The Hobbit', 'J. R. R. Tolkien', 'English', '1937', '100 million'],
+    [
+        'The Hobbit',
+        'J. R. R. Tolkien',
+        'English',
+        '1937',
+        '100 million',
+    ],
     [
         'She: A History of Adventure',
         'H. Rider Haggard',

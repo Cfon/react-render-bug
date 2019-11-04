@@ -11,7 +11,11 @@ export const Editor = props => {
 
     return (
         <form onSubmit={handleSubmit}>
-            <input className="form-control" type="text" defaultValue={cell} />
+            <input
+                className="form-control"
+                type="text"
+                defaultValue={cell}
+            />
         </form>
     );
 };
