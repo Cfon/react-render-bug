@@ -44,13 +44,6 @@ export const DataTable = props => {
     };
 
     const updateCell = value => {
-<<<<<<< HEAD
-        const { row, cell } = _edit;
-        const dataCopy = [..._data];
-        dataCopy[row][cell] = value;
-        setData(dataCopy);
-        setEdit({ row: null, cell: null });
-=======
         const { rowIndex: i, cellIndex: k } = _edit;
         // Warning! Here shallow copy but need a deep copy
         // const dataCopy = [..._data];
@@ -60,7 +53,6 @@ export const DataTable = props => {
         const cellLens = R.lensPath([i, k]);
         setData(R.set(cellLens, value, _data));
         setEdit({ rowIndex: null, cellIndex: null });
->>>>>>> 66a35bff087ca511dccf6dc458abf49c41696a14
     };
 
     const { headers } = props;
