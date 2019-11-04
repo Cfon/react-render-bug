@@ -10,7 +10,10 @@ export const DataTable = props => {
         sortBy: null,
         desc: false,
     });
-    const [_edit, setEdit] = useState({ rowIndex: null, cellIndex: null });
+    const [_edit, setEdit] = useState({
+        rowIndex: null,
+        cellIndex: null,
+    });
 
     const handleSort = event => {
         const index = event.target.cellIndex;
@@ -85,18 +88,14 @@ export const DataTable = props => {
                         <tr key={rowIndex}>
                             {row.map((cell, cellIndex) => {
                                 return (
-<<<<<<< HEAD
                                     <td
                                         key={cellIndex}
                                         data-row={rowIndex}
                                     >
-                                        {_edit.row === rowIndex &&
-                                        _edit.cell === cellIndex ? (
-=======
-                                    <td key={cellIndex} data-row={rowIndex}>
-                                        {_edit.rowIndex === rowIndex &&
-                                        _edit.cellIndex === cellIndex ? (
->>>>>>> 66a35bff087ca511dccf6dc458abf49c41696a14
+                                        {_edit.rowIndex ===
+                                            rowIndex &&
+                                        _edit.cellIndex ===
+                                            cellIndex ? (
                                             <Editor
                                                 cell={cell}
                                                 update={updateCell}
@@ -115,13 +114,8 @@ export const DataTable = props => {
     };
     return (
         <div>
-<<<<<<< HEAD
-            {/* <Table /> */}
-            {Table()}
-=======
             <Table />
             {/*{Table()}*/}
->>>>>>> 66a35bff087ca511dccf6dc458abf49c41696a14
         </div>
     );
 };
