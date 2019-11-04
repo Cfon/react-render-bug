@@ -1,8 +1,11 @@
+@import "./reset";
 @import "~bootstrap";
 @import "~font-awesome";
+@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro&display=swap');
 
 body {
     margin: 1rem;
     color: aliceblue;
     background-color: #333;
+    font-family: 'Anonymous Pro', monospace;
 }
