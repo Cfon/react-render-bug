@@ -1,11 +1,11 @@
 {
     "presets": [
         "@babel/env", 
-        "@babel/preset-react",
-        "@babel/preset-flow"
+        "@babel/react",
+        "@babel/flow"
     ],
     "plugins": [
-        ["@babel/plugin-proposal-decorators", {"legacy": true}],
-        "@babel/plugin-proposal-class-properties"
+        ["@babel/proposal-decorators", {"legacy": true}],
+        "@babel/proposal-class-properties"
     ]
 }
