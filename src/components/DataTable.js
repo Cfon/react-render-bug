@@ -19,7 +19,7 @@ export const DataTable = props => {
         const index = event.target.cellIndex;
         const { sortBy, desc } = _sort;
         const descending = sortBy === index && !desc;
-        // Warning! Shallow copy, need deep copy
+        // Warning! Shallow copy, maybe need a deep copy?
         const dataCopy = [..._data];
 
         dataCopy.sort((a, b) => {
@@ -121,7 +121,7 @@ export const DataTable = props => {
 };
 
 DataTable.propTypes = {
-    initData: PropTypes.arrayOf(PropTypes.string),
+    initialData: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.string)),
 };
 
 DataTable.defaultProps = {
